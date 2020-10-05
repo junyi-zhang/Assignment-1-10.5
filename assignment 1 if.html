@@ -3,25 +3,25 @@
 <script>
 // 5.1
   function dice(){
+    var number=Math.floor(Math.random() * 6)+1;
+    document.write(number);
     document.write("<br>");
-    document.write(Math.floor(Math.random() * 6)+1);
-  }
-  document.write("<br>");
-
-  var user=dice();
   
-  if (user<4){
+  if (number<4){
     document.write("user won")
-  };
+  }
   else{
     document.write("computer won")
   };
+  }
 </script>
 
 <p>
   click to roll a dice
 </p>
+
 <img src="https://gilkalai.files.wordpress.com/2017/09/dice.png" 
      height="42" width="42"
-     onclick="user"/>
+     onclick="dice()"/>
+
 
